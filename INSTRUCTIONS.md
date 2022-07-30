@@ -1,5 +1,11 @@
 # Weekend Challenge: Server Side Calculator
 
+[] Add a `.git ignore` file
+[] `npm init --yes` and `npm install express`
+[] Add start script to 'pakage.json'
+[] Create an express server that listens on a port
+[] Add HTML to index.HTML and make sure it displays on localhost:PORT
+
 Welcome to the weekend challenge!
 
 You are going to be building a server-side calculator. The logic for the calculator **must** be implemented on the server. 
