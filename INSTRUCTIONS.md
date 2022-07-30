@@ -1,10 +1,17 @@
 # Weekend Challenge: Server Side Calculator
 
-[] Add a `.git ignore` file
-[] `npm init --yes` and `npm install express`
-[] Add start script to 'pakage.json'
-[] Create an express server that listens on a port
-[] Add HTML to index.HTML and make sure it displays on localhost:PORT
+Start Up List
+[x] Add a `.git ignore` file
+[x] `npm init --yes` and `npm install express`
+[x] Add start script to 'pakage.json'
+[x] Create an express server that listens on a port
+[x] Add HTML to index.HTML and make sure it displays on localhost:PORT
+
+Timeline
+2/29
+- 12-12:30
+7/30
+- 3:30pm -
 
 Welcome to the weekend challenge!
 
@@ -15,6 +22,10 @@ You are going to be building a server-side calculator. The logic for the calcula
 ### Calculator
 
 Create a user interface where the user can input two values (2 input elements) and the select type of mathematical operation. When the submit (`=` button) is clicked, capture this input, bundle it up in an object, and send this object to the server via a POST. There should also be a 'C' button that will clear the user input fields.
+
+[] 2 input values
+[] submit button
+[]
 
 Build out the server-side logic to compute the numbers as appropriate. The server should be able to handle Addition, Subtraction, Multiplication, and Division. Once the calculation is complete, send back the OK. You should do a GET request after the POST to get the actual calculation.
 
