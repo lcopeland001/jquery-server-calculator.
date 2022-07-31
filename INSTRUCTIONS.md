@@ -5,7 +5,7 @@ Start Up List
 [x] `npm init --yes` and `npm install express`
 [x] Add start script to 'pakage.json'
 [x] Create an express server that listens on a port
-[x] Add HTML to index.HTML and make sure it displays on localhost:PORT
+[x] Add HTML to index.HTML and TEST (`npm start`) to make sure it displays on localhost:PORT
 
 Timeline
 2/29
@@ -23,9 +23,14 @@ You are going to be building a server-side calculator. The logic for the calcula
 
 Create a user interface where the user can input two values (2 input elements) and the select type of mathematical operation. When the submit (`=` button) is clicked, capture this input, bundle it up in an object, and send this object to the server via a POST. There should also be a 'C' button that will clear the user input fields.
 
-[] 2 input values
-[] submit button
-[]
+[x] 2 input values
+[x] math operation buttons
+[x] equals button
+[x] clear button
+[] POST data and put in an object. client and server
+[] Math equation
+[] GET data and post to DOM
+[] clear function
 
 Build out the server-side logic to compute the numbers as appropriate. The server should be able to handle Addition, Subtraction, Multiplication, and Division. Once the calculation is complete, send back the OK. You should do a GET request after the POST to get the actual calculation.
 
