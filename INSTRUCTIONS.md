@@ -12,7 +12,9 @@ Timeline
 - 12-12:30
 7/30
 - 3:30pm -4:30pm
-- 9:50pm
+- 9:50pm-11:30
+7/31
+- 8:30
 
 Welcome to the weekend challenge!
 
@@ -26,8 +28,8 @@ You are going to be building a server-side calculator. The logic for the calcula
 [x] math operation buttons
 [x] equals button
 [x] clear button
-[] POST data and put in an object. client and server
-[] Math equation
+[x] POST data and put in an object. client and server
+[x] Math equation
 [] GET data and post to DOM
 [] clear function
 

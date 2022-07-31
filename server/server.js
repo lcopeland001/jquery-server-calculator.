@@ -6,26 +6,25 @@ app.use(express.static('server/public'));
 app.use(express.urlencoded());
 // Variables and functions
 let equationArray = [];
-let operation = opButton();
-
-function opButton() {
-
-}
 
 // GET & POST request
 app.post('/equation', (req, res) =>{
     const eqIn = req.body
-    if (operation === '+') {
-        eqIn.calculation = eqIn.valueOne + eqIn.valueTwo;
-    } else if (operation === '-') {
-        euIn.calculation = eqIn.valueOne - eqIn.valueTwo;
-    } else if (operation === '*') {
-        eqIn.calculation = eqIn.valueOne * eqIn.valueTwo;
-    } else if (operation === '/') {
-        eqIn.calculation = eqIn.valueOne / eqIn.valueTwo;
+    let valOne = Number(eqIn.valueOne);
+    let valTwo = Number(eqIn.valueTwo);
+    let theOp = eqIn.operationIn;
+    if (theOp === '+') {
+        eqIn.calculation = valOne + valTwo;
+    } else if (theOp === '-') {
+        eqIn.calculation = valOne - valTwo;
+    } else if (theOp === '*') {
+        eqIn.calculation = valOne * valTwo;
+    } else if (theOp === '/') {
+        eqIn.calculation = valOne / valTwo;
     }
     equationArray.push(eqIn);
     res.sendStatus(201);
+    console.log(valOne, valTwo, 'Eq array:', equationArray,);
 })
 
 
