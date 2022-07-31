@@ -25,7 +25,11 @@ app.post('/equation', (req, res) =>{
     equationArray.push(eqIn);
     res.sendStatus(201);
     console.log(valOne, valTwo, 'Eq array:', equationArray,);
-})
+});
+
+app.get('/equation', (req, res) => {
+    res.send(equationArray);
+});
 
 
 //Listen to the port. (LAST)

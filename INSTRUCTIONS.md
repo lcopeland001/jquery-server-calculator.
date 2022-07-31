@@ -9,12 +9,13 @@ Start Up List
 
 Timeline
 2/29
-- 12-12:30
+- 12-12:30a
 7/30
-- 3:30pm -4:30pm
-- 9:50pm-11:30
+- 3:30pm -4:30p
+- 9:50pm-11:30p
 7/31
-- 8:30
+- 8:30-9:30a
+- 10-
 
 Welcome to the weekend challenge!
 
@@ -28,10 +29,11 @@ You are going to be building a server-side calculator. The logic for the calcula
 [x] math operation buttons
 [x] equals button
 [x] clear button
-[x] POST data and put in an object. client and server
-[x] Math equation
-[] GET data and post to DOM
-[] clear function
+[x] POST client side, put in an object
+[x] POST server side, Math equation
+[x] GET server
+[] GET client, send to the DOM
+[] clear button function
 
 Create a user interface where the user can input two values (2 input elements) and the select type of mathematical operation. When the submit (`=` button) is clicked, capture this input, bundle it up in an object, and send this object to the server via a POST. There should also be a 'C' button that will clear the user input fields.
 
