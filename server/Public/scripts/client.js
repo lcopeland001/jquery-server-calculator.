@@ -10,7 +10,7 @@ function readyNow(){
 let operation = '';
 
 function opButton() {
-    console.log('in opButton');
+    //console.log('in opButton');
     if ($(this).data('op') === 'add') {
         operation = '+';
     } else if ($(this).data('op') === 'subtract') {
@@ -24,7 +24,7 @@ function opButton() {
 } // end opButton
 
 function sendEquation () {
-    console.log('in sendEquation');
+    //console.log('in sendEquation');
     $.ajax({
         type: 'POST',
         url: '/equation',
@@ -49,10 +49,12 @@ function addEquation() {
         url: '/equation',
     }).then(function (response) {
         $('#calc-list').empty();
-        for (let values of response) {
+        for (let i = 0; i < response.length; i++) {
+            let values = response[i];
             $('#calc-list').append(`
-                <li>${values.valueOne} ${values.operationIn} ${values.valueTwo}  = ${values.calculation}</li>
-            `)
+                <li>${values.valueOne} ${values.operationIn} ${values.valueTwo} = ${values.calculation}</li>
+            `);
+           $('#answer-text').empty().append(`${values.calculation}`);
         }
     }).catch(function (error) {
         console.log(error);

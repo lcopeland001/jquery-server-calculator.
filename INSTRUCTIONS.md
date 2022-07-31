@@ -15,7 +15,8 @@ Timeline
 - 9:50pm-11:30p
 7/31
 - 8:30-9:30a
-- 10-
+- 10-11
+- 3-
 
 Welcome to the weekend challenge!
 
@@ -33,7 +34,7 @@ You are going to be building a server-side calculator. The logic for the calcula
 [x] POST server side, Math equation
 [x] GET server
 [x] GET client, send to the DOM
-[] Answer text
+[x] Display answer text
 [] clear button function
 
 Create a user interface where the user can input two values (2 input elements) and the select type of mathematical operation. When the submit (`=` button) is clicked, capture this input, bundle it up in an object, and send this object to the server via a POST. There should also be a 'C' button that will clear the user input fields.
