@@ -4,7 +4,6 @@ function readyNow(){
     console.log('Ready');
     $('#equals-button').on('click', sendEquation);
     $('.op-button').on('click', opButton);
-
     addEquation();
 }
 
@@ -24,7 +23,6 @@ function opButton() {
     console.log('operation is', operation);
 } // end opButton
 
-// POST inputs to server
 function sendEquation () {
     console.log('in sendEquation');
     $.ajax({
@@ -36,19 +34,28 @@ function sendEquation () {
             operationIn: operation
         }
     }).then(function (response) {
-        console.log('res:', response);
+        console.log('response:', response);
+        addEquation();
     }).catch(function (error) {
         console.log(error);
-        alert('Something went wrong oh nooooo!!!')
+        alert('Something went wrong oh nooooo!!!');
       })
-
       //console.log(valueOne, operationIn, valueTwo);
 } // end sendEquation
 
 function addEquation() {
-    console.log('data');
+    $.ajax({
+        type: 'GET',
+        url: '/equation',
+    }).then(function (response) {
+        $('#calc-list').empty();
+        for (let values of response) {
+            $('#calc-list').append(`
+                <li>${values.valueOne} ${values.operationIn} ${values.valueTwo}  = ${values.calculation}</li>
+            `)
+        }
+    }).catch(function (error) {
+        console.log(error);
+        alert('Something went wrong');
+    })
 } // end addEquation
-
-
-
-// GET result from the server to put on the DOM

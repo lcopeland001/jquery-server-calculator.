@@ -4,6 +4,7 @@ const PORT = 5002;
 
 app.use(express.static('server/public'));
 app.use(express.urlencoded());
+
 // Variables and functions
 let equationArray = [];
 
