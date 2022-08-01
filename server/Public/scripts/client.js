@@ -4,7 +4,11 @@ function readyNow(){
     console.log('Ready');
     $('#equals-button').on('click', sendEquation);
     $('.op-button').on('click', opButton);
+    $('#clear-button').on('click', clearButton);
+    
     addEquation();
+    clearButton();
+    
 }
 
 let operation = '';
@@ -61,3 +65,10 @@ function addEquation() {
         alert('Something went wrong');
     })
 } // end addEquation
+
+function clearButton() {
+    $('#value-one').val('');
+    $('#value-two').val('');
+    $('#answer-text').empty();
+    $('#answer-text').append('[Answer]');
+}
