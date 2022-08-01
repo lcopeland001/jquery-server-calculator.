@@ -8,15 +8,7 @@ Start Up List
 [x] Add HTML to index.HTML and TEST (`npm start`) to make sure it displays on localhost:PORT
 
 Timeline
-2/29
-- 12-12:30a
-7/30
-- 3:30pm -4:30p
-- 9:50pm-11:30p
-7/31
-- 8:30-9:30a
-- 10-11
-- 3-
+6
 
 Welcome to the weekend challenge!
 
